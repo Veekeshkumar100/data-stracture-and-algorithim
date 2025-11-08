@@ -1,5 +1,5 @@
-import java.util.Scanner;
-import java.util.*;
+import java.util.*; 
+// import java.util.Scanner;
 
 //very good you are the exellent
 // public class exersice {
@@ -224,26 +224,75 @@ import java.util.*;
 
 
 
+//  public class exersice {
+// //     //inverse a number 
+//     public static void main(String[] args) {
+//         Scanner scn=new Scanner(System.in);
+//         System.out.println("Eneter a number");
+//        int n= scn.nextInt();
+//        System.out.println("Enter a number how many number you want to rotate:");
+//        int rn= scn.nextInt();
+//        if(rn>0){
+//            int div = (int)Math.pow(10, rn);
+//            int r=n%div; 
+//            int q=n/div;
+//            int temp =q;
+//            int count =0;
+//            while(temp!=0){
+//                count++;
+//                temp=temp/10;
+//             }
+//             int mutipul= r * (int)Math.pow(10, count);
+//             int rotateNumber =mutipul +q;
+//             System.out.println(rotateNumber); 
+//           }
+//           if(rn<0){
+//            int temp2=n;
+//            int count2=0;
+//                 while(temp2!=0){
+//               count2++;
+//               temp2=temp2/10;
+//           }
+//           int lastDigitcount= count2+rn;
+//           if (lastDigitcount <= 0) {
+//               System.out.println("Cannot rotate: rotation value too large for the number");
+//               return;
+//             }
+//             int r=n%(int)Math.pow(10, lastDigitcount);
+//             System.out.println(r); 
+//             int  q=n/ (int)Math.pow(10, lastDigitcount);
+//             System.out.println(q); 
+//           int  rotateNumber=q+r*(int)Math.pow(10, -rn);
+//           System.out.println(rotateNumber); 
+          
+//           }
+    
+//               //very good you have solved three problem keep going
+// }}
+
+
+// todo lohesst commen divider (lcm) and greatest common divider 
+
+
  public class exersice {
-//     //inverse a number 
+
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
-        System.out.println("Eneter a number");
-       int n= scn.nextInt();
-       System.out.println("Enter a number how many number you want to rotate:");
-       int rn= scn.nextInt();
+        System.out.println("Eneter a two numbers");
+       int n1= scn.nextInt();
+     
+       int n2= scn.nextInt();
           
-         int div = (int)Math.pow(10, rn);
+       while(n1 % n2!=0){
+         int rem = n1 % n2;
+         n1=n2;
+         n2=rem;
+       }
+    int gcd=  n2;
+    int lcm=(n1 *n2)/gcd;
 
-         int r=n%div;
-         int q=n/div;
-           int count =0;
-          while(q!=0){
-              count++;
-              q=q/10;
-          }
-         int mutipul= r * (int)Math.pow(10, count);
-         int rotateNumber =mutipul +q;
-         System.out.println(rotateNumber);
+ System.out.println("gcd"+gcd);
+
+ System.out.println("lcm"+lcm);
               //very good you have solved three problem keep going
 }}
