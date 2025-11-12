@@ -1,0 +1,126 @@
+
+
+// public class pattern {
+//     // *
+//     // **
+//     // ***
+//     // ****
+//     // *****
+//       public static void main(String[] args) {
+       
+//         for(int i=1 ; i<=5; i++){
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println("");
+//         }
+
+//       }  
+
+
+// }
+
+
+
+
+// public class pattern {
+//     // *****
+//     // ****
+//     // ***
+//     // **
+//     // *
+//       public static void main(String[] args) {
+//         for(int i=5 ; i>=0; i--){
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println("");
+//         }
+
+//       }  
+
+
+// }
+
+import java.util.Scanner;
+
+// public class pattern {
+//       public static void main(String[] args) {
+//          Scanner num=ew  Scanner(System.in);
+//          System.out.println("Enter a number");
+//           int num = n.nextInt();
+
+//          int sp=num-1
+//          int st=1;
+
+//         for(int i=1 ; i<=n; i++){
+//          for(int j=1; j<=sp;j++){
+//             System.out.println("");
+//          }    
+//          for(int r=1;r<=st;r++){
+//             System.out.println("*");
+//          }
+//         }
+// sp--;
+// st++;
+// System.out.println();
+// //       }  
+
+
+// }
+// public class pattern {
+//       public static void main(String[] args) {
+//          Scanner n=new  Scanner(System.in);
+//          System.out.println("Enter a number");
+//           int num = n.nextInt();
+//        int  st=num;
+//        int sp=0;
+//      for(int i=1; i<=num; i++){
+//        for(int r=1;r<=sp;r++){
+//             System.out.print(" ");
+//          }
+//          for(int j=1;j<=st;j++){
+//             System.out.print("*");
+//          }
+//          sp++;
+//          st--;
+//          System.out.println();
+//       }
+
+//       }  
+
+
+// }
+public class pattern {
+
+      public static void main(String[] args) {
+         Scanner n=new  Scanner(System.in);
+         System.out.println("Enter a number");
+          int num = n.nextInt();
+       int  st=1;
+       int sp=num/2;
+     for(int i=1; i<=num; i++){
+       for(int r=1;r<=sp;r++){
+            System.out.print(" ");
+         }
+         for(int j=1;j<=st;j++){
+            System.out.print("*");
+         }
+         if(i<=num/2){
+        
+          
+            st+=2;
+            sp--;
+         }else{
+            st-=2;
+            sp++;
+         }
+         
+   
+         System.out.println();
+      }
+
+      }  
+
+
+}

@@ -210,6 +210,7 @@ import java.util.*;
 //         System.out.println("ROTATE KEY");
 //         int y =scn.nextInt();  
         
+
         
 //          int rd=n%(int)Math.pow(10,y);
 //          System.out.println(rd);
@@ -222,15 +223,16 @@ import java.util.*;
 
 
 
+
 //  public class exersice {
-//     //inverse a number 
+// //     //inverse a number 
 //     public static void main(String[] args) {
 //         Scanner scn=new Scanner(System.in);
 //         System.out.println("Eneter a number");
 //        int n= scn.nextInt();
 //        System.out.println("Enter a number how many number you want to rotate:");
 //        int rn= scn.nextInt();
-//        if(n>0){
+//        if(rn>0){
 //            int div = (int)Math.pow(10, rn);
 //            int r=n%div; 
 //            int q=n/div;
@@ -244,47 +246,162 @@ import java.util.*;
 //             int rotateNumber =mutipul +q;
 //             System.out.println(rotateNumber); 
 //           }
-//           else{
+//           if(rn<0){
 //            int temp2=n;
 //            int count2=0;
 //                 while(temp2!=0){
 //               count2++;
 //               temp2=temp2/10;
 //           }
-//           int lastDigitcount= count2-rn;
+//           int lastDigitcount= count2+rn;
 //           if (lastDigitcount <= 0) {
 //               System.out.println("Cannot rotate: rotation value too large for the number");
 //               return;
-//           }
-//         int r=n%(int)Math.pow(10, lastDigitcount);
-//         int  q=n/ (int)Math.pow(10, lastDigitcount);
-//           int  rotateNumber=q+r*(int)Math.pow(10, rn);
+//             }
+//             int r=n%(int)Math.pow(10, lastDigitcount);
+//             System.out.println(r); 
+//             int  q=n/ (int)Math.pow(10, lastDigitcount);
+//             System.out.println(q); 
+//           int  rotateNumber=q+r*(int)Math.pow(10, -rn);
 //           System.out.println(rotateNumber); 
           
 //           }
     
 //               //very good you have solved three problem keep going
+// }}
+
+
+// todo lohesst commen divider (lcm) and greatest common divider 
+
+
+// //  public class exersice {
+
+// //     public static void main(String[] args) {
+// //         Scanner scn=new Scanner(System.in);
+// //         System.out.println("Eneter a two numbers");
+// //        int n1= scn.nextInt();
+     
+// //        int n2= scn.nextInt();
+          
+// //        while(n1 % n2!=0){
+// //          int rem = n1 % n2;
+// //          n1=n2;
+// //          n2=rem;
+// //        }
+// //     int gcd=  n2;
+// //     int lcm=(n1 *n2)/gcd;
+
+// //  System.out.println("gcd"+gcd);
+
+// //  System.out.println("lcm"+lcm);
+// //               //very good you have solved three problem keep going
+// // }}
+
+
+// // todo find the gcd and lcd of the number
+
+// // public class exersice {
+// //     public static void main(String[] args) {
+// //         Scanner scn=new Scanner(System.in);
+// //         System.out.println("Eneter a two numbers");
+// //        int n= scn.nextInt();
+
+// //        for(int div=2;div<=n;div++){
+// //          if(isprime(div)){
+// //               while(n%div==0) {
+// //                n=n/div;
+             
+// //                System.out.println(div);
+// //              }
+// //        }
+// //       } 
+// //           //very good you have solved three problem keep going
+// // }
+// // }
+
+// // public static boolean isprime(int div){
+// //    int d=0;
+// //    for(int j=2;j<div;j++){
+// //       if(div%j==0){
+// //          d++;
+// //       }
+// //    }
+// //    if(d>1){
+// //       return false;
+// //    }else{
+// //       return true;
+
+// //    }
+
+// // }
+
+// //todo pythagoream triplets
+
+
+// public class exersice {
+//      public static void main(String[] args) {
+//         Scanner scn=new Scanner(System.in);
+//         System.out.println("Enetr the numbers ");
+//         int n1=scn.nextInt();
+//         int n2=scn.nextInt();
+//         int n3=scn.nextInt();
+         
+
+
+//         if(n1>n2 && n1>n3){
+//          System.out.println("n1 is greater");
+//          if((n1*n1)==(n2*n2)+(n3*n3)){
+//            System.out.println("yes");
+//          }
+//         }else if(n2>n3 && n2>n1){
+//          if(n2*n2==n1*n1 + n3*n3){
+//             System.out.println("yes");
+//          }
+//         }else if(n3 >n2 && n3>n2){
+//          if(n3*n3==n1*n1 +n2*n2){
+//             System.out.println("yes");
+//          }
+//         }else{
+//          System.out.println("not");
+//         }
+        
+//  }
+   
 // }
-// }
+
 
 
 import java.util.Scanner;
 
-public class exersice {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of bulbs: ");
-        int n = sc.nextInt();
+// public class PythagoreanTriplet {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bulbs that remain ON:");
-        for (int i = 1; i * i <= n; i++) {
-            System.out.println(i * i);
-        }
+//         // Input three numbers
+//         System.out.println("Enter three numbers:");
+//         int a = scanner.nextInt();
+//         int b = scanner.nextInt();
+//         int c = scanner.nextInt();
 
-        sc.close();
-    }
-}
+//         // Check if they form a Pythagorean triplet
+//         if (isPythagoreanTriplet(a, b, c)) {
+//             System.out.println("The numbers form a Pythagorean triplet.");
+//         } else {
+//             System.out.println("The numbers do not form a Pythagorean triplet.");
+//         }
+//     }
+
+//     // Method to check if three numbers form a Pythagorean triplet
+//     public static boolean isPythagoreanTriplet(int x, int y, int z) {
+//         // Sort the numbers to ensure x <= y <= z
+//         int a = Math.min(x, Math.min(y, z));
+//         int c = Math.max(x, Math.max(y, z));
+//         int b = x + y + z - a - c;
+
+//         // Check the Pythagorean condition
+//         return (a * a + b * b == c * c);
+//     }
+// }
 
 
-
-
+.
