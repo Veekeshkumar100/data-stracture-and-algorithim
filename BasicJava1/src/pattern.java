@@ -242,3 +242,104 @@ import java.util.Scanner;
 //       }
 //       }
 //    }
+
+
+
+
+// public class pattern {
+   
+//          public static void main(String[] args) {
+//             Scanner n=new  Scanner(System.in);
+//             System.out.println("Enter a number");
+//             int num = n.nextInt();
+      
+//             int outerSpac=num/2;
+//             System.out.println(outerSpac);
+//             int innnerSpace=-1;
+         
+//          for(int i=1; i<=num; i++){
+//             for(int j=1;j<=outerSpac;j++){
+//                System.out.print(" ");
+//             }
+//             System.out.print("*");
+//             for(int r=1;r<=innnerSpace;r++){
+//                System.out.print(" " );
+//             }
+//             if(i!=1 && i!=num){
+//                System.out.print("*");
+//             }
+         
+//             if(i<=num/2){
+//                outerSpac--;
+//                innnerSpace+=2;
+//             }else{
+//                outerSpac++;
+//                innnerSpace-=2;
+//             }
+//                System.out.println();
+//          }
+      
+      
+//       }}
+
+
+
+
+
+// public class pattern {
+   
+      //  
+      
+
+// public class pattern {
+
+//          public static void main(String[] args) {
+//             Scanner n=new  Scanner(System.in);
+//             System.out.println("Enter a number");
+//             int num = n.nextInt();
+//                int a=0;
+//                int b=1;
+//             for(int i=0;i<=num;i++){
+//                for(int j=1;j<=i;j++){
+//                   System.out.print(a+" ");
+//                   int c=a+b;
+//                   a=b;
+//                   b=c;
+             
+//                }
+//                System.out.println();
+//             }
+            
+//          }
+// }
+
+
+
+// public class pattern {
+
+//           public static void main(String[] args) {
+//              Scanner n=new  Scanner(System.in);
+//              System.out.println("Enter a number");
+//              int num = n.nextInt();
+                
+//              for(int i=1;i<=10;i++){
+//                System.out.println(num+ "*" +i + "=" +(num*i));
+//              }
+
+
+
+//                }
+
+          
+//          }
+
+
+
+public class pattern {
+
+          public static void main(String[] args) {
+             Scanner n=new  Scanner(System.in);
+             System.out.println("Enter a number");
+             int num = n.nextInt();
+                   
+          }}
